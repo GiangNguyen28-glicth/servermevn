@@ -12,7 +12,7 @@ export async function bootstrap() {
   app.use(cookieParser());
   app.setGlobalPrefix('api/v1');
   const options = {
-    origin: true,
+    origin: "*",
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     preflightContinue: false,
     optionsSuccessStatus: 204,
